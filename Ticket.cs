@@ -18,9 +18,23 @@ namespace TicketingWithClasses
             ticketWatchers = new List<string>();
         }
 
+        public string displayTicketNames()
+        {
+            string names = "";
+            for (int i = 0; i < ticketWatchers.Count; i++)
+            {
+                if (i < ticketWatchers.Count - 1)
+                {
+                    names += ticketWatchers[i] + "|";
+                }
+                else names += ticketWatchers[i];
+            }
+            return names;
+        }
+
         public string Display()
         {
-            return $"{ticketNumber},{ticketSummary},{ticketStatus},{ticketPriority},{ticketSubmitter},{ticketAssignedTo}";
+            return $"{ticketNumber},{ticketSummary},{ticketStatus},{ticketPriority},{ticketSubmitter},{ticketAssignedTo},{displayTicketNames()}";
         }
     }
 }

@@ -48,7 +48,8 @@ namespace TicketingWithClasses
                 } while (addWatcher != 'N');
 
                 Console.WriteLine(ticket.Display());
-                
+                Console.WriteLine("Would you like to create another ticket (Y/N)?");
+                choice = Console.ReadLine().ToUpper()[0];
 
             } while (choice != 'N');
         }
