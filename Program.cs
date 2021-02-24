@@ -37,7 +37,7 @@ namespace TicketingWithClasses
                 Console.Write("Would you like to add a watcher (Y/N)? ");
                 char addWatcher = Console.ReadLine().ToUpper()[0];
                 
-                do
+                while (addWatcher != 'N')
                 {
                     Console.Write("Enter the name of the watcher: ");
                     string addName = Console.ReadLine();
@@ -45,7 +45,7 @@ namespace TicketingWithClasses
                     Console.Write("Would you like to add another watcher (Y/N)? ");
                     addWatcher = Console.ReadLine().ToUpper()[0];
 
-                } while (addWatcher != 'N');
+                } 
 
                 sw.WriteLine(ticket.Display());
                 sw.Close();
