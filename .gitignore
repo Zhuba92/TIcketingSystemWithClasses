@@ -1,0 +1,13 @@
+TicketingWithClasses.csproj
+.vscode/launch.json
+.vscode/tasks.json
+obj/project.assets.json
+obj/project.nuget.cache
+obj/TicketingWithClasses.csproj.nuget.dgspec.json
+obj/TicketingWithClasses.csproj.nuget.g.props
+obj/TicketingWithClasses.csproj.nuget.g.targets
+obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+obj/Debug/netcoreapp3.1/TicketingWithClasses.AssemblyInfo.cs
+obj/Debug/netcoreapp3.1/TicketingWithClasses.AssemblyInfoInputs.cache
+obj/Debug/netcoreapp3.1/TicketingWithClasses.assets.cache
+obj/Debug/netcoreapp3.1/TicketingWithClasses.csprojAssemblyReference.cache
