@@ -15,7 +15,12 @@ namespace TicketingWithClasses
 
         public Ticket()
         {
-            
+            ticketWatchers = new List<string>();
+        }
+
+        public string Display()
+        {
+            return $"{ticketNumber},{ticketSummary},{ticketStatus},{ticketPriority},{ticketSubmitter},{ticketAssignedTo}";
         }
     }
 }
