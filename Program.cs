@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace TicketingWithClasses
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -40,7 +40,7 @@ namespace TicketingWithClasses
                 do
                 {
                     Console.Write("What is the name of the watcher? ");
-                    
+
                 } while (addWatcher != 'N');
                 
 
