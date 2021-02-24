@@ -42,13 +42,14 @@ namespace TicketingWithClasses
                     Console.Write("What is the name of the watcher? ");
                     string addName = Console.ReadLine();
                     ticket.ticketWatchers.Add(addName);
-                    Console.WriteLine("Would you like to add another watcher (Y/N)?");
+                    Console.WriteLine("Would you like to add another watcher (Y/N)? ");
                     addWatcher = Console.ReadLine().ToUpper()[0];
 
                 } while (addWatcher != 'N');
 
-                Console.WriteLine(ticket.Display());
-                Console.WriteLine("Would you like to create another ticket (Y/N)?");
+                sw.WriteLine(ticket.Display());
+                sw.Close();
+                Console.WriteLine("Would you like to create another ticket (Y/N)? ");
                 choice = Console.ReadLine().ToUpper()[0];
 
             } while (choice != 'N');
